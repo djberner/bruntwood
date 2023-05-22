@@ -1,0 +1,16 @@
+<!--
+ - Created by DB on 16/05/2023.
+ -->
+
+<!-- Send a SMS -->
+<template>
+    <p>SMS Message</p>
+
+    <lightning-input label="Message" value={message} onchange={messageChange}></lightning-input>
+    <lightning-button
+            variant="brand"
+            label="Send"
+            title="send"
+            onclick={handleSendSMS}
+    ></lightning-button>
+</template>
